@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="deskstop-nav">
+    <nav id="desktop-nav">
         <div class="logo">Juan Pablo</div>
         <div>
             <ul class="nav-links">
@@ -21,6 +21,47 @@
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Juan Pablo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="togglemenu()">Home</a></li>
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/Luffy.png" alt="Juan Pablo profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello World I'm</p>
+            <h1 class="title">Juan Pablo</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Juan.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" >Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img
+                 src="./assets/Linkedin-Logo2.png" 
+                 alt="My Linkedin profile" class="icon" 
+                 onclick="location.href='https://www.linkedin.com/in/juan-pablo-pérez-gutiérrez-a4b090279/'">
+                <img
+                 src="./assets/GitHub-Logo2.png" 
+                 alt="My GitHub profile" class="icon" 
+                 onclick="location.href='https://github.com/MasterJuan579'">
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
