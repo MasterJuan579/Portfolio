@@ -62,8 +62,9 @@ a:hover{
 }
 
 .logo{
-    color: white;
-    font-size: 2rem;
+    color: rgb(255, 184, 51);
+    font-size: 1.7rem;
+    font-weight: 650;
 
 }
 
@@ -270,4 +271,52 @@ section {
 
 .btn-container {
     gap: 1rem   ;
+}
+
+/* About Section */
+
+#about {
+    position: relative;
+}
+
+.section-container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 54px;
+    background: #231f1f;
+    margin-top: 40px;
+}
+
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-text-header {
+    display: flex;
+    align-items: center;
+}
+
+.about-text-header h2 {
+    font-size: 32px;
+    margin-right: 10px;
+    color: white;
+}
+
+.about-text-header hr {
+    flex-grow: 1;
+    border: 1px solid rgb(255, 184, 51);
 }
