@@ -45,7 +45,9 @@
         <div class="section__text">
             <p class="section__text__p1">Hello World I'm</p>
             <h1 class="title">Juan Pablo</h1>
-            <p class="section__text__p2">Software Engineer</p>
+            <div class="container">
+                <span class="text second-text">Software Engineer</span>
+            </div>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Juan.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'" >Contact Info</button>
@@ -64,6 +66,27 @@
                  alt="My Instagram Profile" class="icon"
                  onclick="location.href='https://www.instagram.com/juanpabloperez54/'">
             </div>
+            <script>
+                const text = document.querySelector(".second-text");
+
+                const textLoad = () => {
+                    setTimeout (() => {
+                        text.textContent = "Software Engineer"
+                    }, 0);
+                    setTimeout (() => {
+                        text.textContent = "Student"
+                    }, 4000);
+                    setTimeout (() => {
+                        text.textContent = "Tech Enthusiast"
+                    }, 8000);
+                    setTimeout (() => {
+                        text.textContent = "Love for Coding"
+                    }, 12000);
+                }
+
+                textLoad();
+                setInterval(textLoad, 16000);
+            </script>
         </div>
     </section>
     <section id="about">
