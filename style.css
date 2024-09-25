@@ -30,22 +30,7 @@ a, .btn{
 }
 
 /*Deskstop nav */
-
-header{
-    position: fixed;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    background-color: rgba(128, 128, 128, 0.595);
-    backdrop-filter: blut(8px);
-    z-index: 1000;
-}
-
-/* nav, .nav-links {
+nav, .nav-links {
     display: flex; 
 }
 
@@ -56,11 +41,9 @@ nav {
 }
 
 .nav-links {
-    position: fixed;
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-    z-index: 1000;
 
 }
 
@@ -87,7 +70,7 @@ a:hover{
 
 .logo:hover{
         cursor: default;
-} */
+}
 
 /*Hamburger Menu*/
 
