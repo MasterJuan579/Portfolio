@@ -365,3 +365,62 @@ section {
     flex-grow: 1;
     border: 1px solid rgb(255, 184, 51);
 }
+
+/* Skills Section */
+
+/* Contenedor general de la sección */
+.section-container-skills {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Contenedor para los íconos de habilidades */
+.details_skill_containers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Contenedor de cada habilidad individual */
+.skill-container {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Iconos de habilidades */
+.icon-skills {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Agrandar ícono y sombra al pasar el mouse */
+.skill-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-skills:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el texto de las habilidades */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.section__text_skills {
+    color: gray;
+    font-size: 1.2rem;
+}
