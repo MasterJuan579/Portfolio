@@ -204,7 +204,8 @@ section {
 }
 
 .section__text__p1{
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 30px;
     text-align: center;
 
 }
@@ -389,38 +390,59 @@ section {
 .skill-container {
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 300px;
+    height: 70px;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: rgb(255, 184, 51) 0.1rem solid;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
 }
 
 /* Iconos de habilidades */
 .icon-skills {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
+    margin: 20px;
     transition: transform 0.3s ease;
+
+}
+.skill-container:hover{
+    background-color: rgb(255, 184, 51);
 }
 
 /* Agrandar ícono y sombra al pasar el mouse */
-.skill-container:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.icon-skills:hover {
+.skill-container:hover
+.icon-skills{
     transform: scale(1.2);
 }
 
+
+
 /* Estilos para el texto de las habilidades */
-h2 {
+.skill-text{
+    display: flex;
+    flex-direction: column;
+}
+.skill-text h2{
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
+    transform: translateY(15px);
+    transition: transform 0.3s ease;
+    color: white;
 }
 
-.section__text_skills {
-    color: gray;
-    font-size: 1.2rem;
+.skill-container:hover .skill-text h2{
+    transform: translateY(-6px);
+}
+
+.skill-text p{
+    opacity: 0;
+    color: white;
+    transform: translateY(-10px);
+    font-size: 1rem; 
+    transition: opacity 0.3s ease;   
+}
+
+.skill-container:hover .skill-text p{
+    opacity: 1;
 }
