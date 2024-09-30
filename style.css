@@ -204,8 +204,7 @@ section {
 }
 
 .section__text__p1{
-    padding: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: center;
 
 }
@@ -378,7 +377,7 @@ section {
 
 
 /* Contenedor para los íconos de habilidades */
-.details_skill_containers {
+.details_containers {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -446,3 +445,65 @@ section {
 .skill-container:hover .skill-text p{
     opacity: 1;
 }
+
+/* Section Projects */
+
+.project-container{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    background: #231f1f;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.section-container-projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.img-projects{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.github-container {
+    cursor: pointer;
+    height: 2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.github-img{
+    width: 35px;
+}
+.project-text p{
+    font-size: 1rem;
+    color: rgb(189, 176, 176);
+    text-align: left;
+    margin: 15px;
+}
+
+
+
+.project-text h2{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+.project-container:hover{
+    transform: translateY(-15px);
+    background-color: #3d3838;
+}
+
