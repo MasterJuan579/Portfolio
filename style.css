@@ -225,6 +225,11 @@ section {
 
 /* Movement part */
 
+.container{
+    width: 246px;
+    overflow: hidden;
+}
+
 .container .text{
     font-weight: 600;
     position: relative;
@@ -234,88 +239,27 @@ section {
     gap: 2rem;
 }
 
-.text-animation{
-    font-weight: 600;
-    font-size: 30px;
-    color: #ffb833;
-    min-width: 280px;
-}
 
-.text-animation span{
-    position: relative;
-}
-
-.text-animation span::before{
-    content: "Software Engineer";
-    animation: words 20s infinite;
-}
-
-.text-animation span::after{
+.text.second-text:before{
     content: "";
-    background-color: rgb(25, 25, 24);
     position: absolute;
-    width: calc(100% + 8px);
+    top: 0;
+    left: 0;
     height: 100%;
-    border-left: 3px solid  #ffb833;
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+    width: 100%;
+    background-color: rgb(25, 25, 24);
+    border-left: 4px solid #ffb833;
+    animation: animate 4s steps(12) infinite;
 }
 
-@keyframes cursor{
-    to{
-        border-left: 2px  #ffb833;
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
     }
-}
-
-@keyframes words{
-    0%,
-    20%{
-        content: "Student";
-    }
-    21%,
-    40%{
-        content: "Tech Enthusiast";
-    }
-    41%,
-    60%{
-        content: "Love for Coding";
-    }
-    61%,
-    80%{
-        content: "Tech Innovator";
-    }
-    81%,
     100%{
-        content: "AI Explorer";
+        left: 0%;
     }
 }
-
-@keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-        width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
-        width: calc(100% + 8px);
-    }
-}
-
 
 /*Icons*/
 
@@ -643,3 +587,4 @@ form button{
 form button:hover{
     background-color: rgb(255, 184, 51);
 }
+

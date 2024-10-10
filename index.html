@@ -45,7 +45,9 @@
         <div class="section__text">
             <p class="section__text__p1">Hello World I'm</p>
             <h1 class="title">Juan Pablo</h1>
-            <h3 class="text-animation"><span></span></h3>
+            <div class="container">
+                <span class="text second-text">Software Engineer</span>
+            </div>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Juan.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'" >Contact Info</button>
@@ -64,6 +66,27 @@
                  alt="My Instagram Profile" class="icon"
                  onclick="location.href='https://www.instagram.com/juanpabloperez54/'">
             </div>
+            <script>
+                const text = document.querySelector(".second-text");
+
+                const textLoad = () => {
+                    setTimeout (() => {
+                        text.textContent = "Software Engineer"
+                    }, 0);
+                    setTimeout (() => {
+                        text.textContent = "Student"
+                    }, 4000);
+                    setTimeout (() => {
+                        text.textContent = "Tech Enthusiast"
+                    }, 8000);
+                    setTimeout (() => {
+                        text.textContent = "Love for Coding"
+                    }, 12000);
+                }
+
+                textLoad();
+                setInterval(textLoad, 16000);
+            </script>
         </div>
     </section>
     <section id="about">
@@ -234,35 +257,6 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch with Me</p>
-        <h1 class="title">Contact</h1>
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Full Name" id="name"
-                    class="item" autocomplete="off">
-                    <div class="error-txt">Name can't be blank</div>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Email Address" id="email"
-                    class="item" autocomplete="off">
-                    <div class="error-txt email">Email Adress can't be blank</div>
-                </div>
-            </div>
-            <div class="textarea-field field">
-                <textarea name="" id="message" cols="30" rows="10"
-                 placeholder="Your Massage" class="item"
-                  autocomplete="off"></textarea>
-                <div class="error-txt">Message can't be blank</div>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <script src="script.js"></script>
 </body>
 </html>
